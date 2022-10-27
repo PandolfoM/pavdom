@@ -1,0 +1,37 @@
+html,
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  overflow: hidden;
+}
+
+header {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-direction: column;
+}
+
+.logo {
+  max-width: max-content;
+  width: 90vw;
+}
+
+.info {
+  display: flex;
+  justify-content: center;
+  flex-wrap: wrap;
+  gap: 5rem;
+}
+
+.card {
+  text-align: left;
+  display: flex;
+  flex-direction: column;
+  width: 20rem;
+  background-color: rgb(198, 198, 198);
+  border-radius: 10px;
+  padding: 10px;
+  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2), inset 0 0 10px 1px rgba(0, 0, 0, 0.2);
+}
