@@ -1,9 +1,16 @@
+@import url("https://fonts.googleapis.com/css2?family=Lato:ital,wght@0,100;0,300;0,400;0,700;0,900;1,100;1,300;1,400;1,700;1,900&display=swap");
+
+* {
+  font-family: "Lato";
+}
+
 html,
 body {
   margin: 0;
   padding: 0;
   box-sizing: border-box;
-  overflow: hidden;
+  height: 100vh;
+  width: 100vw;
 }
 
 header {
@@ -11,6 +18,11 @@ header {
   justify-content: center;
   align-items: center;
   flex-direction: column;
+}
+
+h1 {
+  font-size: 1.5rem;
+  text-align: center;
 }
 
 .logo {
@@ -22,16 +34,75 @@ header {
   display: flex;
   justify-content: center;
   flex-wrap: wrap;
-  gap: 5rem;
+  gap: 2rem;
 }
 
 .card {
+  height: 15rem;
+  transition: transform 200ms ease-in;
   text-align: left;
   display: flex;
   flex-direction: column;
   width: 20rem;
-  background-color: rgb(198, 198, 198);
-  border-radius: 10px;
-  padding: 10px;
-  box-shadow: 0 0 10px 5px rgba(0, 0, 0, 0.2), inset 0 0 10px 1px rgba(0, 0, 0, 0.2);
+  background-color: rgb(255, 255, 255);
+  border-radius: 0.75rem;
+  padding: 1rem;
+  box-shadow: 5px 5px 8px rgba(0 0 0/0.15);
+  border-top: 5px solid #fc6719;
+}
+
+.card:hover {
+  transform: scale(1.03);
+}
+
+.card-details > p {
+  margin-bottom: 12px;
+  color: #262324;
+  font-size: 1.05rem;
+  font-weight: 700;
+}
+
+.card-header > h3 {
+  text-align: center;
+  color: #262324;
+  font-size: 1.3rem;
+  font-weight: 900;
+  margin-bottom: 0px;
+}
+
+.card-header {
+  width: max-content;
+  margin: 0 auto;
+}
+
+a {
+  text-decoration: none;
+  color: inherit;
+}
+
+hr {
+  border: #26232435 1px solid;
+  width: 100%;
+}
+
+.arrows > i::before {
+  font: var(--fa-font-solid);
+  content: "\f07e";
+}
+
+.arrows {
+  margin: auto 0;
+  color: #fc6719;
+  text-shadow: 5px 5px 4px rgba(0, 0, 0, 0.15);
+}
+
+@media (max-width: 847px) {
+  .info {
+    flex-direction: column;
+    align-items: center;
+  }
+  .arrows > i::before {
+    font: var(--fa-font-solid);
+    content: "\f07d";
+  }
 }
