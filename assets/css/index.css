@@ -38,7 +38,7 @@ h1 {
 }
 
 .card {
-  height: 15rem;
+  height: 17rem;
   transition: transform 200ms ease-in;
   text-align: left;
   display: flex;
@@ -68,6 +68,11 @@ h1 {
   font-size: 1.3rem;
   font-weight: 900;
   margin-bottom: 0px;
+}
+
+.card-subtitle {
+  color: #26232476;
+  margin: 0.5em 0;
 }
 
 .card-header {
