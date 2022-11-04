@@ -49,10 +49,11 @@ h1 {
   padding: 1rem;
   box-shadow: 5px 5px 8px rgba(0 0 0/0.15);
   border-top: 5px solid #fc6719;
+  overflow: hidden;
 }
 
 .card:hover {
-  transform: scale(1.03);
+  transform: scale(1.01);
 }
 
 .card-details > p {
@@ -65,9 +66,17 @@ h1 {
 .card-header > h3 {
   text-align: center;
   color: #262324;
-  font-size: 1.3rem;
+  font-size: 1.4rem;
   font-weight: 900;
-  margin-bottom: 0px;
+  margin-bottom: 0;
+}
+
+.card-header > h4 {
+  text-align: center;
+  color: #2623248e;
+  font-size: 1.1rem;
+  font-weight: 700;
+  margin: 0.5rem 0px;
 }
 
 .card-subtitle {
